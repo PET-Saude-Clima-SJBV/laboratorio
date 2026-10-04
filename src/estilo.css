@@ -1,0 +1,92 @@
+/* Tokens herdados do design system dos mockups (lib.js) */
+:root {
+  --teal-900: #0A4F49;
+  --teal-700: #0F6B64;
+  --teal-50: #E8F3F1;
+  --ambar: #E0A040;
+  --verde: #1D9E75;
+  --azul: #378ADD;
+  --vermelho: #E24B4A;
+  --cinza: #B4B2A9;
+
+  --fundo: #F6F7F5;
+  --superficie: #FFFFFF;
+  --borda: #E3E5E0;
+  --texto: #1F2A28;
+  --texto-2: #5E6B68;
+  --raio: 10px;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--texto);
+  background: var(--fundo);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fundo); }
+a { color: var(--teal-700); }
+h1 { font-size: 1.5rem; margin: 0 0 .25rem; }
+h2 { font-size: 1.1rem; margin: 0 0 .75rem; }
+.sub { color: var(--texto-2); margin: 0 0 1.5rem; }
+
+.cartao {
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  padding: 1.25rem;
+}
+
+.botao {
+  display: inline-flex; align-items: center; gap: .4rem;
+  border: 1px solid var(--teal-700); background: var(--teal-700); color: #fff;
+  padding: .55rem 1rem; border-radius: 8px; font: inherit; font-weight: 600;
+  cursor: pointer; text-decoration: none;
+}
+.botao:hover { background: var(--teal-900); }
+.botao:disabled { opacity: .5; cursor: default; }
+.botao.secundario { background: transparent; color: var(--teal-700); }
+.botao.secundario:hover { background: var(--teal-50); }
+.botao.perigo { background: transparent; color: var(--vermelho); border-color: var(--vermelho); }
+
+.campo { display: flex; flex-direction: column; gap: .3rem; font-size: .85rem; font-weight: 600; color: var(--texto-2); }
+input, select, textarea {
+  font: inherit; color: var(--texto); padding: .55rem .7rem;
+  border: 1px solid var(--borda); border-radius: 8px; background: #fff; width: 100%;
+}
+input:focus, select:focus, textarea:focus { outline: 2px solid var(--teal-700); outline-offset: -1px; border-color: transparent; }
+textarea { font-family: ui-monospace, Consolas, monospace; font-size: .8rem; }
+
+.erro { color: var(--vermelho); background: #FDEDED; border-radius: 8px; padding: .6rem .8rem; font-size: .9rem; }
+.aviso { background: #FDF5E7; border: 1px solid #F1D9A8; border-radius: 8px; padding: .8rem 1rem; font-size: .9rem; }
+
+.selo {
+  display: inline-block; padding: .15rem .55rem; border-radius: 999px;
+  font-size: .75rem; font-weight: 600; white-space: nowrap;
+  background: #EEF0EC; color: var(--texto-2);
+}
+.selo.verde { background: #E3F4EE; color: #13714F; }
+.selo.azul { background: #E6F0FB; color: #1F5FA3; }
+.selo.vermelho { background: #FDEDED; color: #B3302F; }
+.selo.ambar { background: #FDF3E1; color: #8A5A10; }
+.selo.teal { background: var(--teal-50); color: var(--teal-900); }
+
+table.tabela { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.tabela th { text-align: left; font-size: .75rem; text-transform: uppercase; letter-spacing: .04em; color: var(--texto-2); padding: .6rem .75rem; border-bottom: 1px solid var(--borda); }
+.tabela td { padding: .7rem .75rem; border-bottom: 1px solid var(--borda); vertical-align: middle; }
+.tabela tr:last-child td { border-bottom: 0; }
+.rolagem { overflow-x: auto; }
+
+.grade { display: grid; gap: 1rem; }
+@media (min-width: 720px) {
+  .grade.duas { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---- celular primeiro: toque confortável e sem zoom automático ---- */
+@media (max-width: 640px) {
+  input, select, textarea { font-size: 16px; }   /* abaixo de 16px o iPhone dá zoom ao tocar no campo */
+  .botao { min-height: 44px; justify-content: center; }
+  h1 { font-size: 1.3rem; }
+  .cartao { padding: 1rem; }
+  .tabela th, .tabela td { padding: .55rem .5rem; }
+}
+
+/* trechos de código longos quebram a linha em telas estreitas */
+code { overflow-wrap: anywhere; }

@@ -1,0 +1,72 @@
+[
+ {
+  "codigo": "psf-i",
+  "sigla": "PSF I",
+  "nome": "PSF Dr. Alexis Hakim"
+ },
+ {
+  "codigo": "psf-ii",
+  "sigla": "PSF II",
+  "nome": "PSF Dr. Antenor José Bernardes"
+ },
+ {
+  "codigo": "psf-iii",
+  "sigla": "PSF III",
+  "nome": "PSF Dr. Benedito Carlos Rocha Westin"
+ },
+ {
+  "codigo": "psf-iv",
+  "sigla": "PSF IV",
+  "nome": "PSF Dr. Ermelindo Adolpho Arriguci"
+ },
+ {
+  "codigo": "psf-v",
+  "sigla": "PSF V",
+  "nome": "PSF Dr. Geraldo Pradela"
+ },
+ {
+  "codigo": "psf-vi",
+  "sigla": "PSF VI",
+  "nome": "PSF Dr. Raul de Oliveira Andrade"
+ },
+ {
+  "codigo": "psf-vii",
+  "sigla": "PSF VII",
+  "nome": "PSF Dr. Sebastião José Rodrigues"
+ },
+ {
+  "codigo": "psf-viii",
+  "sigla": "PSF VIII",
+  "nome": "PSF Maria Gabriela Junqueira Valim"
+ },
+ {
+  "codigo": "ubs-i",
+  "sigla": "UBS I",
+  "nome": "UBS Dr. Acidino de Andrade"
+ },
+ {
+  "codigo": "ubs-ii",
+  "sigla": "UBS II",
+  "nome": "UBS Dr. Amado Gonçalves dos Santos"
+ },
+ {
+  "codigo": "ubs-iii",
+  "sigla": "UBS III",
+  "nome": "UBS Dr. Delvo de Oliveira Westin"
+ },
+ {
+  "codigo": "ubs-iv",
+  "sigla": "UBS IV",
+  "nome": "UBS Dr. Paulo Emílio de Oliveira Azevedo"
+ },
+ {
+  "codigo": "ubs-v",
+  "sigla": "UBS V",
+  "nome": "UBS Dr. Paulo Roberto Sorci"
+ },
+ {
+  "codigo": "usf-i",
+  "sigla": "USF I",
+  "nome": "USF Dr. João Batista Nogueira Bueno"
+ }
+]

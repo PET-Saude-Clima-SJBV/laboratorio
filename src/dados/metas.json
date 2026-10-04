@@ -1,0 +1,452 @@
+[
+ {
+  "codigo": "G1-01",
+  "grupo": 1,
+  "eixo": "I",
+  "titulo": "Monitorar ≥ 70% dos agravos prioritários relacionados ao clima",
+  "indicador": "Nº relatórios epidemiológicos produzidos",
+  "acoes_sugeridas": "Vigilância integrada, análise epidemiológica e monitoramento territorial contínuo",
+  "prazo_inicio": 0,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G1-02",
+  "grupo": 1,
+  "eixo": "I",
+  "titulo": "Reduzir agravos respiratórios relacionados às queimadas em territórios prioritários",
+  "indicador": "Nº de atendimentos relacionados",
+  "acoes_sugeridas": "Monitoramento territorial; educação em saúde; campanhas preventivas; apoio à APS",
+  "prazo_inicio": 12,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G1-03",
+  "grupo": 1,
+  "eixo": "II",
+  "titulo": "Integrar ≥ 50% dos serviços especializados à APS",
+  "indicador": "% serviços integrados",
+  "acoes_sugeridas": "Articulação entre ambulatórios, CAPS, reabilitação e APS; reuniões de rede; regulação territorial",
+  "prazo_inicio": 12,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G1-04",
+  "grupo": 1,
+  "eixo": "II",
+  "titulo": "Monitorar ≥ 100 usuários em condições sensíveis ao clima",
+  "indicador": "Nº usuários acompanhados",
+  "acoes_sugeridas": "Telemonitoramento; estratificação de risco; acompanhamento clínico territorial",
+  "prazo_inicio": 0,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G1-05",
+  "grupo": 1,
+  "eixo": "II",
+  "titulo": "Implantar ≥ 4 protocolos de resposta rápida para agravos respiratórios",
+  "indicador": "Nº protocolos implantados",
+  "acoes_sugeridas": "Protocolos clínicos; fluxos assistenciais; monitoramento de pacientes crônicos",
+  "prazo_inicio": 6,
+  "prazo_fim": 12
+ },
+ {
+  "codigo": "G1-06",
+  "grupo": 1,
+  "eixo": "II",
+  "titulo": "Implantar ≥ 4 linhas de cuidado em reabilitação climática",
+  "indicador": "Nº linhas implantadas",
+  "acoes_sugeridas": "Avaliação funcional; reabilitação respiratória; fisioterapia comunitária",
+  "prazo_inicio": 6,
+  "prazo_fim": 18
+ },
+ {
+  "codigo": "G1-07",
+  "grupo": 1,
+  "eixo": "II",
+  "titulo": "Realizar ≥ 300 atendimentos de reabilitação vinculados ao projeto",
+  "indicador": "Nº atendimentos realizados",
+  "acoes_sugeridas": "Atendimentos individuais e coletivos; grupos terapêuticos",
+  "prazo_inicio": 6,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G1-08",
+  "grupo": 1,
+  "eixo": "III",
+  "titulo": "Monitorar digitalmente ≥ 300 usuários vulneráveis",
+  "indicador": "Nº usuários monitorados",
+  "acoes_sugeridas": "Telemonitoramento clínico e territorial",
+  "prazo_inicio": 6,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G1-09",
+  "grupo": 1,
+  "eixo": "III",
+  "titulo": "Realizar ≥ 10 fóruns comunitários digitais e presenciais",
+  "indicador": "Nº fóruns realizados",
+  "acoes_sugeridas": "Fóruns territoriais sobre saúde e clima",
+  "prazo_inicio": 6,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G2-01",
+  "grupo": 2,
+  "eixo": "I",
+  "titulo": "Mapear ≥ 60% das áreas de risco socioambiental do município relacionadas a arboviroses, enchentes e eventos climáticos",
+  "indicador": "% do território mapeado",
+  "acoes_sugeridas": "Geoprocessamento; uso de drones; análise espacial; sensores ambientais; visitas territoriais; georreferenciamento de enchentes, queimadas e agravos climáticos",
+  "prazo_inicio": 0,
+  "prazo_fim": 12
+ },
+ {
+  "codigo": "G2-02",
+  "grupo": 2,
+  "eixo": "I",
+  "titulo": "Monitorar ≥ 70% das áreas críticas para escorpiões e animais peçonhentos",
+  "indicador": "% áreas monitoradas",
+  "acoes_sugeridas": "Inspeções territoriais; controle ambiental; manejo de resíduos; ações educativas",
+  "prazo_inicio": 6,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G2-03",
+  "grupo": 2,
+  "eixo": "II",
+  "titulo": "Implantar protocolos de cuidado territorializado para agravos climáticos",
+  "indicador": "Nº protocolos implantados",
+  "acoes_sugeridas": "Protocolos para doenças respiratórias, arboviroses, leptospirose, sofrimento psíquico e agravos dermatológicos",
+  "prazo_inicio": 6,
+  "prazo_fim": 18
+ },
+ {
+  "codigo": "G2-04",
+  "grupo": 2,
+  "eixo": "II",
+  "titulo": "Reduzir em ≥ 10% o tempo médio de espera para atendimento especializado",
+  "indicador": "Tempo médio de espera",
+  "acoes_sugeridas": "Gestão territorial do acesso; reorganização dos fluxos; regulação integrada",
+  "prazo_inicio": 12,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G2-05",
+  "grupo": 2,
+  "eixo": "II",
+  "titulo": "Implantar acompanhamento digital para ≥ 150 usuários prioritários",
+  "indicador": "Nº usuários acompanhados",
+  "acoes_sugeridas": "Plataforma digital de cuidado; telessaúde; monitoramento remoto",
+  "prazo_inicio": 6,
+  "prazo_fim": 18
+ },
+ {
+  "codigo": "G2-06",
+  "grupo": 2,
+  "eixo": "III",
+  "titulo": "Implantar ≥ 1 plataforma integrada de vigilância climática e saúde",
+  "indicador": "Plataforma implantada",
+  "acoes_sugeridas": "Desenvolvimento de plataforma digital integrada com dados epidemiológicos, ambientais e territoriais",
+  "prazo_inicio": 6,
+  "prazo_fim": 18
+ },
+ {
+  "codigo": "G2-07",
+  "grupo": 2,
+  "eixo": "III",
+  "titulo": "Integrar ≥ 3 sistemas de informação em saúde e ambiente",
+  "indicador": "Nº sistemas integrados",
+  "acoes_sugeridas": "Integração e-SUS, vigilância epidemiológica, dados ambientais e Defesa Civil",
+  "prazo_inicio": 6,
+  "prazo_fim": 18
+ },
+ {
+  "codigo": "G2-08",
+  "grupo": 2,
+  "eixo": "III",
+  "titulo": "Implantar ≥ 1 dashboard validado para gestão territorial",
+  "indicador": "Dashboard implantado",
+  "acoes_sugeridas": "Desenvolvimento de painéis analíticos com indicadores climáticos e epidemiológicos",
+  "prazo_inicio": 6,
+  "prazo_fim": 12
+ },
+ {
+  "codigo": "G2-09",
+  "grupo": 2,
+  "eixo": "III",
+  "titulo": "Implantar ≥ 1 sistema de georreferenciamento de áreas críticas",
+  "indicador": "Sistema implantado",
+  "acoes_sugeridas": "Georreferenciamento de enchentes, queimadas e vetores",
+  "prazo_inicio": 6,
+  "prazo_fim": 18
+ },
+ {
+  "codigo": "G3-01",
+  "grupo": 3,
+  "eixo": "I",
+  "titulo": "Realizar ≥ 10 ações de saúde mental relacionadas à exposição ambiental",
+  "indicador": "Nº de ações realizadas",
+  "acoes_sugeridas": "Grupos terapêuticos; acolhimento psicossocial; educação em saúde mental",
+  "prazo_inicio": 6,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G3-02",
+  "grupo": 3,
+  "eixo": "II",
+  "titulo": "Reduzir em ≥ 12% o abandono de tratamento em saúde mental",
+  "indicador": "Taxa de abandono",
+  "acoes_sugeridas": "Busca ativa; grupos terapêuticos; cuidado compartilhado APS-CAPS",
+  "prazo_inicio": 12,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G3-03",
+  "grupo": 3,
+  "eixo": "II",
+  "titulo": "Implantar ≥ 6 grupos terapêuticos territoriais",
+  "indicador": "Nº grupos ativos",
+  "acoes_sugeridas": "Grupos de apoio psicossocial; rodas de conversa; oficinas comunitárias",
+  "prazo_inicio": 0,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G3-04",
+  "grupo": 3,
+  "eixo": "II",
+  "titulo": "Realizar ≥ 15 ações comunitárias de saúde mental pós-desastres",
+  "indicador": "Nº ações realizadas",
+  "acoes_sugeridas": "Acolhimento psicossocial; intervenções comunitárias; educação emocional",
+  "prazo_inicio": 6,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G3-05",
+  "grupo": 3,
+  "eixo": "III",
+  "titulo": "Implantar ≥ 5 estratégias comunitárias de comunicação territorial",
+  "indicador": "Nº estratégias implantadas",
+  "acoes_sugeridas": "Comunicação comunitária em UBS, CRAS, escolas e territórios vulneráveis",
+  "prazo_inicio": 6,
+  "prazo_fim": 18
+ },
+ {
+  "codigo": "G3-06",
+  "grupo": 3,
+  "eixo": "III",
+  "titulo": "Implantar ≥ 3 estratégias de telessaúde vinculadas ao projeto",
+  "indicador": "Nº estratégias implantadas",
+  "acoes_sugeridas": "Teleconsultorias; teleorientações; acompanhamento remoto",
+  "prazo_inicio": 6,
+  "prazo_fim": 18
+ },
+ {
+  "codigo": "G3-07",
+  "grupo": 3,
+  "eixo": "III",
+  "titulo": "Realizar ≥ 10 fóruns comunitários digitais e presenciais",
+  "indicador": "Nº fóruns realizados",
+  "acoes_sugeridas": "Fóruns territoriais sobre saúde e clima",
+  "prazo_inicio": 6,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G3-08",
+  "grupo": 3,
+  "eixo": "III",
+  "titulo": "Realizar ≥ 1 Conferência Municipal PET-Saúde: Clima",
+  "indicador": "Conferência realizada",
+  "acoes_sugeridas": "Conferência municipal integrada à gestão e comunidade",
+  "prazo_inicio": 12,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G3-09",
+  "grupo": 3,
+  "eixo": "III",
+  "titulo": "Capacitar ≥ 300 estudantes e lideranças comunitárias em comunicação em saúde",
+  "indicador": "Nº participantes capacitados",
+  "acoes_sugeridas": "Oficinas de comunicação popular e educação climática",
+  "prazo_inicio": 6,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G4-01",
+  "grupo": 4,
+  "eixo": "I",
+  "titulo": "Reduzir em ≥ 15% o tempo médio de notificação de agravos relacionados às emergências climáticas",
+  "indicador": "Tempo médio de notificação",
+  "acoes_sugeridas": "Integração APS-Vigilância-Defesa Civil - Integrado ao Departamento de Trânsito e Segurança - Departamento de Trânsito e Segurança; protocolos territoriais de resposta rápida; capacitação das equipes",
+  "prazo_inicio": 6,
+  "prazo_fim": 18
+ },
+ {
+  "codigo": "G4-02",
+  "grupo": 4,
+  "eixo": "I",
+  "titulo": "Reduzir em ≥ 10% os casos de dengue, zika e chikungunya em áreas prioritárias",
+  "indicador": "Taxa de incidência",
+  "acoes_sugeridas": "Campanhas educativas; eliminação de criadouros; visitas domiciliares; monitoramento vetorial; mutirões comunitários",
+  "prazo_inicio": 12,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G4-03",
+  "grupo": 4,
+  "eixo": "I",
+  "titulo": "Reduzir em ≥ 8% a incidência de leptospirose em territórios prioritários",
+  "indicador": "Taxa de incidência",
+  "acoes_sugeridas": "Educação em saúde; limpeza pós-enchente; controle de roedores; orientação sobre manejo seguro da água e lama",
+  "prazo_inicio": 12,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G4-04",
+  "grupo": 4,
+  "eixo": "II",
+  "titulo": "Implantar ≥ 3 fluxos assistenciais integrados APS-CAPS-Rede Especializada",
+  "indicador": "Nº fluxos implantados",
+  "acoes_sugeridas": "Construção de protocolos clínicos; organização da linha de cuidado climática; pactuação intersetorial; matriciamento da APS",
+  "prazo_inicio": 6,
+  "prazo_fim": 18
+ },
+ {
+  "codigo": "G4-05",
+  "grupo": 4,
+  "eixo": "II",
+  "titulo": "Reduzir complicações relacionadas às doenças hídricas em territórios prioritários",
+  "indicador": "Taxa de complicações",
+  "acoes_sugeridas": "Monitoramento clínico; educação em saúde; visitas domiciliares",
+  "prazo_inicio": 12,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G4-06",
+  "grupo": 4,
+  "eixo": "II",
+  "titulo": "Realizar ≥ 2 seminários científicos municipais PET-Saúde: Clima",
+  "indicador": "Nº seminários realizados",
+  "acoes_sugeridas": "Eventos científicos; integração ensino-serviço-comunidade",
+  "prazo_inicio": 12,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G4-07",
+  "grupo": 4,
+  "eixo": "III",
+  "titulo": "Implantar sistema de alerta territorial com ≥ 70% de cobertura",
+  "indicador": "% cobertura territorial",
+  "acoes_sugeridas": "Desenvolvimento de protocolos digitais; integração com Defesa Civil e Vigilância",
+  "prazo_inicio": 6,
+  "prazo_fim": 18
+ },
+ {
+  "codigo": "G4-08",
+  "grupo": 4,
+  "eixo": "III",
+  "titulo": "Desenvolver ≥ 1 aplicativo de orientação à população em eventos extremos",
+  "indicador": "Aplicativo desenvolvido",
+  "acoes_sugeridas": "Aplicativo com alertas, orientações sanitárias, mapas e comunicação emergencial",
+  "prazo_inicio": 12,
+  "prazo_fim": 18
+ },
+ {
+  "codigo": "G4-09",
+  "grupo": 4,
+  "eixo": "III",
+  "titulo": "Implantar ≥ 1 sistema de georreferenciamento de áreas críticas",
+  "indicador": "Sistema implantado",
+  "acoes_sugeridas": "Georreferenciamento de enchentes, queimadas e vetores",
+  "prazo_inicio": 6,
+  "prazo_fim": 18
+ },
+ {
+  "codigo": "G5-01",
+  "grupo": 5,
+  "eixo": "I",
+  "titulo": "Monitorar ≥ 70% das áreas críticas para proliferação vetorial",
+  "indicador": "% áreas monitoradas",
+  "acoes_sugeridas": "Georreferenciamento de focos; inspeções ambientais; monitoramento digital de arboviroses",
+  "prazo_inicio": 6,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G5-02",
+  "grupo": 5,
+  "eixo": "I",
+  "titulo": "Ampliar em ≥ 30% as ações preventivas relacionadas à hepatite A e doenças de veiculação hídrica",
+  "indicador": "Nº de ações realizadas",
+  "acoes_sugeridas": "Campanhas educativas; distribuição de materiais; educação sanitária; visitas domiciliares",
+  "prazo_inicio": 6,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G5-03",
+  "grupo": 5,
+  "eixo": "II",
+  "titulo": "Produzir documentário, e-book e materiais científicos vinculados ao eixo",
+  "indicador": "Nº materiais produzidos",
+  "acoes_sugeridas": "Sistematização científica; produção audiovisual; divulgação científica",
+  "prazo_inicio": 12,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G5-04",
+  "grupo": 5,
+  "eixo": "III",
+  "titulo": "Produzir ≥ 80 conteúdos digitais educativos",
+  "indicador": "Nº conteúdos produzidos",
+  "acoes_sugeridas": "Produção de vídeos, podcasts, cartilhas, reels, infográficos e campanhas",
+  "prazo_inicio": 0,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G5-05",
+  "grupo": 5,
+  "eixo": "III",
+  "titulo": "Realizar ≥ 20 campanhas educativas territoriais",
+  "indicador": "Nº campanhas realizadas",
+  "acoes_sugeridas": "Campanhas presenciais e digitais sobre enchentes, queimadas, dengue, leptospirose e resíduos",
+  "prazo_inicio": 0,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G5-06",
+  "grupo": 5,
+  "eixo": "III",
+  "titulo": "Produzir ≥ 8 episódios de podcast “Saúde e Clima”",
+  "indicador": "Nº episódios produzidos",
+  "acoes_sugeridas": "Podcasts educativos com especialistas e comunidade",
+  "prazo_inicio": 6,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G5-07",
+  "grupo": 5,
+  "eixo": "III",
+  "titulo": "Desenvolver ≥ 15 ações educativas contra fake news em saúde",
+  "indicador": "Nº ações realizadas",
+  "acoes_sugeridas": "Educação midiática; oficinas; campanhas digitais",
+  "prazo_inicio": 6,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G5-08",
+  "grupo": 5,
+  "eixo": "III",
+  "titulo": "Realizar ≥ 15 capacitações interprofissionais em comunicação e tecnologia",
+  "indicador": "Nº capacitações",
+  "acoes_sugeridas": "Formação integrada ensino-serviço",
+  "prazo_inicio": 6,
+  "prazo_fim": 24
+ },
+ {
+  "codigo": "G5-09",
+  "grupo": 5,
+  "eixo": "III",
+  "titulo": "Produzir documentário institucional PET-Saúde: Clima",
+  "indicador": "Documentário produzido",
+  "acoes_sugeridas": "Produção audiovisual territorial",
+  "prazo_inicio": 12,
+  "prazo_fim": 24
+ }
+]

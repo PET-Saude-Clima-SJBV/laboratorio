@@ -1,0 +1,54 @@
+# Bloqueia PRs que quebram o fluxo main -> feature -> dev/hml/main.
+name: Regras de branch
+
+on:
+  pull_request:
+    branches: [dev, hml, main]
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Conferir origem e destino do PR
+        env:
+          ORIGEM: ${{ github.head_ref }}
+          DESTINO: ${{ github.base_ref }}
+        run: |
+          echo "PR: $ORIGEM -> $DESTINO"
+
+          if [[ "$ORIGEM" == "dev" || "$ORIGEM" == "hml" ]]; then
+            echo "::error::Nao e permitido abrir PR a partir de '$ORIGEM'. Suba a sua branch feature/ diretamente para '$DESTINO'."
+            exit 1
+          fi
+
+          if [[ "$ORIGEM" == merge/* && "$DESTINO" != "dev" ]]; then
+            echo "::error::Branches merge/ servem so para resolver conflito com o dev."
+            exit 1
+          fi
+
+          if [[ ! "$ORIGEM" =~ ^(feature|fix|docs|merge|hotfix)/ ]]; then
+            echo "::error::Nome de branch invalido: '$ORIGEM'. Use feature/, fix/ ou docs/ (ver CONTRIBUTING.md)."
+            exit 1
+          fi
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Conferir que a branch nao contem dev/hml
+        if: ${{ !startsWith(github.head_ref, 'merge/') }}
+        env:
+          RAMO: origin/${{ github.head_ref }}
+        run: |
+          # Todo merge commit que existe no dev/hml (e nao na main) foi criado ao mesclar
+          # algo DENTRO do dev/hml. Se a branch do PR contem um deles, ela puxou o dev/hml.
+          for amb in dev hml; do
+            git rev-parse -q --verify origin/$amb >/dev/null || continue
+            for c in $(git rev-list --merges origin/$amb --not origin/main); do
+              if git merge-base --is-ancestor "$c" "$RAMO"; then
+                echo "::error::Sua branch contem codigo vindo de '$amb' (commit $c). Recrie a branch a partir da main (ver CONTRIBUTING.md)."
+                exit 1
+              fi
+            done
+          done
+          echo "OK: branch limpa"
