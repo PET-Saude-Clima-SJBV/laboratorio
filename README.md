@@ -1,24 +1,25 @@
 # Laboratório PET-Saúde Clima
 
-Espaço de treino do **Grupo PET II**: aqui você aprende o fluxo de desenvolvimento do HUB e cria protótipos,
-**sem tocar no sistema real**. Pode errar à vontade.
+Espaço de treino do **Grupo PET II** para aprender o **Git básico** e criar protótipos, **sem tocar no sistema real**.
+Pode errar à vontade.
 
-- **No ar:** https://pet-saude-clima-sjbv.github.io/laboratorio/ (o que foi aprovado na `main`)
-- **Projeto real (só leitura para estudo):** https://github.com/PET-Saude-Clima-SJBV/hub-pet-saude
-
-| | Laboratório (aqui) | HUB (projeto real) |
-|---|---|---|
-| Fluxo de branches e PR | igual | igual |
-| Aprovação do tutor | sim | sim |
-| Publica em | GitHub Pages (link público) | servidor da UNIFAE |
-| Banco de dados | não tem (arquivos JSON) | PostgreSQL |
-| Dados | fictícios ou públicos | reais (no prod) |
+- **No ar:** https://pet-saude-clima-sjbv.github.io/laboratorio/ (atualiza sozinho a cada envio)
+- **Projeto real, para estudar:** https://github.com/PET-Saude-Clima-SJBV/hub-pet-saude
 
 ---
 
-## Primeiros passos
+## 1. Preparar (uma vez)
 
-Pré-requisitos: [Git](https://git-scm.com/) e [Node.js 22 LTS](https://nodejs.org/).
+Instale o [Git](https://git-scm.com/) e o [Node.js 22 LTS](https://nodejs.org/). Depois, no terminal:
+
+```bash
+git config --global user.name "Seu Nome"
+git config --global user.email "seu-email@exemplo.com"
+```
+
+Use o mesmo e-mail da sua conta do GitHub.
+
+## 2. Baixar o projeto (uma vez)
 
 ```bash
 git clone https://github.com/PET-Saude-Clima-SJBV/laboratorio.git
@@ -27,33 +28,77 @@ npm install
 npm run dev
 ```
 
-Abra http://localhost:5173.
+Abra http://localhost:5173. Para parar, `Ctrl + C` no terminal.
 
-## Criar o seu protótipo
+## 3. O ciclo do dia a dia
 
-1. Branch a partir da `main`: `git checkout main && git pull && git checkout -b feature/seunome-assunto`
-2. Copie `src/prototipos/Exemplo.vue` para `src/prototipos/OQueVoceVaiFazer.vue` (ex.: `MapaDeCalorClarisse.vue`).
-3. O protótipo aparece sozinho no menu. Programe, teste no navegador.
-4. `git add . && git commit -m "Protótipo do mapa de calor" && git push -u origin feature/seunome-assunto`
-5. No GitHub, abra o PR para **`dev`**. O tutor revisa.
-6. Quando o tutor pedir, PR da mesma branch para `hml` e depois para `main`. Na `main`, entra no ar.
+Sempre nesta ordem:
 
-O passo a passo completo, com exercícios, está em [docs/exercicios.md](docs/exercicios.md).
-As regras do fluxo estão em [CONTRIBUTING.md](CONTRIBUTING.md).
+```bash
+git pull                          # 1. traz o que os colegas enviaram
+                                  # 2. trabalhe nos seus arquivos
+git status                        # 3. veja o que mudou
+git add .                         # 4. separa as mudanças para o commit
+git commit -m "O que você fez"    # 5. registra, com uma mensagem clara
+git pull                          # 6. de novo, caso alguém tenha enviado algo nesse meio tempo
+git push                          # 7. envia para o GitHub
+```
+
+Em alguns minutos o site no ar mostra a sua mudança.
+
+## 4. O seu protótipo
+
+Cada pessoa cria **o próprio arquivo** em `src/prototipos/`, por exemplo `ApresentacaoSofia.vue`.
+Ele aparece sozinho no menu. Copie o `Exemplo.vue` para começar.
+
+Como cada um mexe no seu arquivo, quase nunca há conflito.
+
+## Comandos úteis
+
+| Comando | Para quê |
+|---|---|
+| `git status` | o que mudou e o que ainda não foi enviado |
+| `git log --oneline` | histórico de commits |
+| `git diff` | o que exatamente mudou nos arquivos |
+| `git pull` | baixar as novidades |
+| `git restore arquivo` | desfazer mudanças num arquivo que ainda não foi para commit |
+
+## Deu conflito?
+
+Acontece quando duas pessoas mudam **a mesma linha** do mesmo arquivo. O `git pull` avisa e marca o trecho assim:
+
+```
+<<<<<<< HEAD
+a sua versão
+=======
+a versão do colega
+>>>>>>> ...
+```
+
+Deixe o texto como deve ficar, apague as marcas `<<<<<<<`, `=======` e `>>>>>>>`, e então:
+
+```bash
+git add .
+git commit -m "Resolve conflito"
+git push
+```
+
+Na dúvida, chame o colega que mexeu no mesmo arquivo.
 
 ## O que já vem pronto
 
 | Onde | O quê |
 |---|---|
-| `src/dados/metas.json` | as 45 metas oficiais (código, grupo, eixo, indicador, prazo) |
+| `src/dados/metas.json` | as 45 metas oficiais do projeto |
 | `src/dados/territorios.json` | as 14 unidades de saúde (PSF, UBS, USF) |
-| `src/dados/tipos.ts` | os tipos TypeScript desses dados |
-| `src/estilo.css` | cores e estilos do HUB: `cartao`, `botao`, `selo`, `tabela`, `campo`, `grade duas` |
+| `src/estilo.css` | cores e estilos do HUB: `cartao`, `botao`, `selo`, `tabela`, `campo` |
 | `src/componentes/` | componentes reaproveitáveis (ex.: `CartaoMeta.vue`) |
 
 ## Regras
 
-- **Só dados fictícios ou públicos.** Nunca dado real de paciente ou de pessoa.
-- Mexa no **seu** arquivo de protótipo e em componentes **novos**. Para mudar algo compartilhado, combine no PR.
-- **Nada de senha, token ou chave** no código. O repositório é público.
-- IA é permitida, desde que você saiba explicar cada linha do que enviou.
+- **Só dados fictícios ou públicos.** Nunca dado real de pessoa.
+- Mexa no **seu** arquivo. Para mudar algo compartilhado, avise o grupo antes.
+- **Nada de senha, token ou chave** no código: o repositório é público.
+- IA é permitida, desde que você saiba explicar o que enviou.
+
+Exercícios: [docs/exercicios.md](docs/exercicios.md).

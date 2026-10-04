@@ -9,11 +9,11 @@ import { prototipos } from './prototipos';
   <section class="cartao">
     <h2>Como criar o seu protótipo</h2>
     <ol class="passos">
-      <li><strong>Crie a sua branch a partir da <code>main</code>:</strong> <code>git checkout -b feature/seunome-assunto</code></li>
-      <li><strong>Crie um arquivo</strong> em <code>src/prototipos/</code>, por exemplo <code>MapaDeCalorClarisse.vue</code>. Copie o <code>Exemplo.vue</code> para começar.</li>
+      <li><strong>Traga as novidades:</strong> <code>git pull</code></li>
+      <li><strong>Crie um arquivo</strong> em <code>src/prototipos/</code>, por exemplo <code>ApresentacaoSofia.vue</code>. Copie o <code>Exemplo.vue</code> para começar.</li>
       <li><strong>Rode na sua máquina</strong> com <code>npm run dev</code>. O seu protótipo aparece sozinho no menu.</li>
-      <li><strong>Envie e abra o PR</strong> para <code>dev</code>. Depois, quando o tutor pedir, para <code>hml</code> e <code>main</code>.</li>
-      <li><strong>Aprovado na <code>main</code></strong>, o protótipo fica no ar no link público do laboratório.</li>
+      <li><strong>Registre e envie:</strong> <code>git add .</code>, <code>git commit -m "O que você fez"</code>, <code>git pull</code>, <code>git push</code></li>
+      <li><strong>Em alguns minutos</strong> o protótipo fica no ar no link público do laboratório.</li>
     </ol>
   </section>
 

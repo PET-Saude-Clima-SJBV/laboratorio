@@ -1,47 +1,49 @@
-# Exercícios do laboratório
+# Exercícios de Git básico
 
-Faça em ordem. Cada exercício termina com um PR. Assim você pratica o fluxo inteiro várias vezes antes do projeto real.
+Faça em ordem. Ao final de cada um, o resultado aparece no site do laboratório.
 
-## 1. Primeiro PR (Git e fluxo)
+## 1. Primeiro envio
 
-1. Clone o repositório e rode `npm install` e `npm run dev`.
-2. Crie a branch `feature/seunome-apresentacao` a partir da `main`.
-3. Crie `src/prototipos/ApresentacaoSeuNome.vue` com o seu nome, curso e uma frase sobre o que quer aprender.
-4. Commit, push e PR para `dev`. Leia as checagens automáticas no PR.
-5. Depois da aprovação, abra o PR da **mesma branch** para `hml` e, por fim, para `main`.
+1. Siga o README até o `npm run dev` funcionar.
+2. Copie `src/prototipos/Exemplo.vue` para `src/prototipos/ApresentacaoSeuNome.vue`.
+3. Troque o conteúdo por: seu nome, seu curso e o que quer aprender no projeto.
+4. `git add .`, `git commit -m "Minha apresentação"`, `git pull`, `git push`.
+5. Abra o site do laboratório e veja a sua página no menu.
 
-**Objetivo:** entender branch, commit, PR, revisão e os três degraus.
+**Objetivo:** o ciclo completo: alterar, registrar, enviar.
 
-## 2. Usar os dados prontos (Vue)
+## 2. Ver o histórico
 
-Na sua branch nova, crie um protótipo que lista as **unidades de saúde** de `src/dados/territorios.json`
-em cartões, com uma busca por nome.
+1. `git pull` para trazer as apresentações dos colegas.
+2. `git log --oneline` e encontre o seu commit e o de um colega.
+3. Mude uma frase da sua página, rode `git diff` e veja a diferença antes do commit.
+4. Envie a mudança.
 
-**Objetivo:** importar JSON, `ref`, `computed`, `v-for`, `v-model`.
+**Objetivo:** entender o histórico e o que cada commit muda.
 
-## 3. Componente reaproveitável
+## 3. Usar os dados prontos
 
-Crie em `src/componentes/` um componente que outro colega possa usar (ex.: `SeloSituacao.vue`, que recebe
-`nao_iniciado | em_andamento | em_atraso | concluido` e mostra o selo colorido). Use-o no seu protótipo e
-explique no PR como usar.
+No seu arquivo, liste as unidades de saúde de `src/dados/territorios.json` em cartões, com uma busca por nome.
+Use o `Exemplo.vue` como referência.
 
-**Objetivo:** `props`, componentização, documentar para o colega.
+**Objetivo:** primeiro passo em Vue com dados reais do projeto.
 
-## 4. Resolver um conflito
+## 4. Conflito de propósito
 
-Combine com um colega: os dois alteram a mesma linha de `src/componentes/CartaoMeta.vue` em branches diferentes.
-O segundo a abrir o PR para `dev` resolve o conflito com a branch `merge/` (veja o CONTRIBUTING).
+Em dupla: os dois mudam **a mesma frase** de `src/componentes/CartaoMeta.vue` ao mesmo tempo.
+Um envia primeiro. O segundo faz `git pull`, resolve o conflito (veja o README) e envia.
+Depois desfaçam a mudança para o componente voltar ao normal.
 
-**Objetivo:** conflito sem contaminar a sua `feature/`.
+**Objetivo:** perder o medo do conflito.
 
-## 5. Protótipo da sua frente
+## 5. Desfazer
 
-Faça uma primeira versão da tela da sua frente na trilha de estudos (importador da planilha, mapa, motor de alerta,
-Kanban, app da população, painel de indicadores...). Pode ser só a tela, com dados fictícios em JSON.
+1. Mude qualquer coisa no seu arquivo e **não** faça commit.
+2. `git restore src/prototipos/ApresentacaoSeuNome.vue` e veja a mudança sumir.
 
-**Objetivo:** chegar na reunião com algo para mostrar e discutir.
+**Objetivo:** saber voltar atrás antes de enviar.
 
 ---
 
-**Dica:** abra o projeto real (`hub-pet-saude`) para estudar como as telas foram feitas: `frontend/src/views/`
-e `frontend/src/components/`. Você pode copiar ideias para o laboratório.
+Depois destes, o próximo passo é o fluxo com branches e Pull Request, o mesmo do HUB. Ele será ligado aqui pelo
+responsável de DevOps quando o grupo estiver pronto.
