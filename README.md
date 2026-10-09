@@ -99,6 +99,5 @@ Na dúvida, chame o colega que mexeu no mesmo arquivo.
 - **Só dados fictícios ou públicos.** Nunca dado real de pessoa.
 - Mexa no **seu** arquivo. Para mudar algo compartilhado, avise o grupo antes.
 - **Nada de senha, token ou chave** no código: o repositório é público.
-- IA é permitida, desde que você saiba explicar o que enviou.
 
 Exercícios: [docs/exercicios.md](docs/exercicios.md).

@@ -33,7 +33,6 @@ import { prototipos } from './prototipos';
         <li>Só dados fictícios. Nunca dado real de pessoa.</li>
         <li>Mexa só no seu arquivo de protótipo e em componentes novos.</li>
         <li>Sem senhas, tokens ou chaves no código.</li>
-        <li>Pode usar IA, desde que saiba explicar cada linha.</li>
       </ul>
     </section>
   </div>
