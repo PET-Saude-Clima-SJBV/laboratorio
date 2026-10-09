@@ -9,7 +9,7 @@ sem branches de ambiente, sem PR obrigatório e sem aprovação. Isso é de prop
 |---|---|---|
 | Build | `.github/workflows/build.yml` | a cada envio, confere se o projeto compila (`npm ci` + `npm run build`) |
 | Publicação | `.github/workflows/pages.yml` | a cada envio na `main`, publica em https://pet-saude-clima-sjbv.github.io/laboratorio/ |
-| Protótipos | `src/prototipos/*.vue` | descobertos sozinhos por `src/prototipos.ts` (um arquivo por aluno) |
+| Áreas | `src/prototipos/<area>/*.vue` | uma pasta por área; cada `.vue` direto na pasta vira página, agrupada no menu por `src/prototipos.ts` (subpastas como `componentes/` não viram página) |
 | Dados | `src/dados/*.json` | cópia de dados públicos do HUB |
 
 Os dois workflows rodam nas máquinas do GitHub (`ubuntu-latest`). **Nunca** use `runs-on: self-hosted` aqui: o runner

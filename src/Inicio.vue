@@ -10,8 +10,8 @@ import { prototipos } from './prototipos';
     <h2>Como criar o seu protótipo</h2>
     <ol class="passos">
       <li><strong>Traga as novidades:</strong> <code>git pull</code></li>
-      <li><strong>Crie um arquivo</strong> em <code>src/prototipos/</code>, por exemplo <code>ApresentacaoSofia.vue</code>. Copie o <code>Exemplo.vue</code> para começar.</li>
-      <li><strong>Rode na sua máquina</strong> com <code>npm run dev</code>. O seu protótipo aparece sozinho no menu.</li>
+      <li><strong>Crie a pasta da sua área</strong> em <code>src/prototipos/</code>, por exemplo <code>mapa-de-calor/</code>. Copie a pasta <code>exemplo-de-area/</code> para começar.</li>
+      <li><strong>Rode na sua máquina</strong> com <code>npm run dev</code>. Cada <code>.vue</code> da pasta aparece sozinho no menu, dentro da sua área.</li>
       <li><strong>Registre e envie:</strong> <code>git add .</code>, <code>git commit -m "O que você fez"</code>, <code>git pull</code>, <code>git push</code></li>
       <li><strong>Em alguns minutos</strong> o protótipo fica no ar no link público do laboratório.</li>
     </ol>
@@ -24,14 +24,14 @@ import { prototipos } from './prototipos';
         <li><code>src/dados/metas.json</code>: as 45 metas oficiais do projeto</li>
         <li><code>src/dados/territorios.json</code>: as 14 unidades de saúde (PSF, UBS, USF)</li>
         <li><code>src/estilo.css</code>: as cores e os estilos do HUB (classes <code>cartao</code>, <code>botao</code>, <code>selo</code>, <code>tabela</code>...)</li>
-        <li><code>src/componentes/</code>: componentes reaproveitáveis. Criou algo útil? Coloque aqui para os colegas usarem.</li>
+        <li><code>src/componentes/</code>: componentes para todas as áreas. Criou algo útil? Coloque aqui para os colegas usarem.</li>
       </ul>
     </section>
     <section class="cartao">
       <h2>Regras</h2>
       <ul>
         <li>Só dados fictícios. Nunca dado real de pessoa.</li>
-        <li>Mexa só no seu arquivo de protótipo e em componentes novos.</li>
+        <li>Mexa só na pasta da sua área. Para mudar algo compartilhado, avise o grupo.</li>
         <li>Sem senhas, tokens ou chaves no código.</li>
       </ul>
     </section>

@@ -1,12 +1,13 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue';
+import { computed, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
-import { prototipos } from './prototipos';
+import { areas, linkCodigo, linkHistorico, prototipos } from './prototipos';
 
 const rota = useRoute();
 const menuAberto = ref(false);
 const base = import.meta.env.BASE_URL; // '/' na sua máquina, '/laboratorio/' no GitHub Pages
 watch(() => rota.path, () => (menuAberto.value = false));
+const atual = computed(() => prototipos.find((p) => rota.path === `/${p.slug}`));
 </script>
 
 <template>
@@ -20,13 +21,22 @@ watch(() => rota.path, () => (menuAberto.value = false));
       </div>
       <nav>
         <RouterLink to="/" class="item" :class="{ ativo: rota.path === '/' }">Como funciona</RouterLink>
-        <div class="grupo">Protótipos ({{ prototipos.length }})</div>
-        <RouterLink v-for="p in prototipos" :key="p.slug" :to="`/${p.slug}`" class="item" :class="{ ativo: rota.path === `/${p.slug}` }">
-          {{ p.titulo }}
-        </RouterLink>
+        <template v-for="a in areas" :key="a.pasta">
+          <div class="grupo">{{ a.nome }} ({{ a.prototipos.length }})</div>
+          <RouterLink v-for="p in a.prototipos" :key="p.slug" :to="`/${p.slug}`" class="item" :class="{ ativo: rota.path === `/${p.slug}` }">
+            {{ p.titulo }}
+          </RouterLink>
+        </template>
       </nav>
     </aside>
-    <main class="conteudo"><RouterView /></main>
+    <main class="conteudo">
+      <div v-if="atual" class="trilha">
+        <span>{{ areas.find((a) => a.pasta === atual!.area)?.nome }} · <code>{{ atual.caminho }}</code></span>
+        <a :href="linkCodigo(atual)" target="_blank" rel="noopener">Ver código</a>
+        <a :href="linkHistorico(atual.area)" target="_blank" rel="noopener">Histórico {{ atual.area ? 'da área' : '' }}</a>
+      </div>
+      <RouterView />
+    </main>
   </div>
 </template>
 
@@ -44,6 +54,10 @@ nav { display: flex; flex-direction: column; gap: .15rem; }
 .item:hover { background: rgba(255, 255, 255, .07); }
 .item.ativo { background: var(--teal-700); color: #fff; font-weight: 600; }
 .grupo { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; opacity: .7; padding: .9rem .7rem .3rem; }
+.trilha { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem; font-size: .8rem; color: var(--texto-2); margin-bottom: 1rem; }
+.trilha span { margin-right: auto; }
+.trilha code { overflow-wrap: anywhere; }
+.trilha a { color: var(--teal-700); font-weight: 600; }
 .conteudo { flex: 1; padding: 2rem; max-width: 1150px; min-width: 0; }
 @media (max-width: 760px) {
   .casca { flex-direction: column; }

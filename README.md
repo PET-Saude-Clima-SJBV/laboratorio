@@ -46,12 +46,33 @@ git push                          # 7. envia para o GitHub
 
 Em alguns minutos o site no ar mostra a sua mudança.
 
-## 4. O seu protótipo
+## 4. A sua área
 
-Cada pessoa cria **o próprio arquivo** em `src/prototipos/`, por exemplo `ApresentacaoSofia.vue`.
-Ele aparece sozinho no menu. Copie o `Exemplo.vue` para começar.
+Cada pessoa cuida de **uma área** e cria **uma pasta** para ela em `src/prototipos/`:
 
-Como cada um mexe no seu arquivo, quase nunca há conflito.
+```
+src/prototipos/
+├── Exemplo.vue                  página solta, grupo "Geral"
+├── exemplo-de-area/             modelo de área: copie esta pasta
+│   ├── Territorios.vue          cada .vue aqui vira uma página da área
+│   └── componentes/
+│       └── CartaoUnidade.vue    peças só da área (não viram página)
+└── mapa-de-calor/               exemplo: a área de alguém
+    ├── Painel.vue
+    └── Historico.vue
+```
+
+- **Nome da pasta** em minúsculas, com hífen: `mapa-de-calor` aparece no menu como **Mapa de calor**.
+- **Nome do arquivo** em CamelCase: `PainelDeAlertas.vue` aparece como **Painel De Alertas**.
+- Tudo aparece sozinho no menu, agrupado por área. Não precisa registrar nada.
+
+Como cada um mexe na própria pasta, quase nunca há conflito.
+
+### Acompanhar online
+
+- **Site:** no menu, cada área tem o seu grupo. Em cada página há os links **Ver código** e **Histórico da área**.
+- **GitHub:** abra a pasta da área em `src/prototipos/` e clique em **History** para ver quem enviou o quê.
+- **Actions:** mostra se o último envio compilou e quando o site foi atualizado.
 
 ## Comandos úteis
 
