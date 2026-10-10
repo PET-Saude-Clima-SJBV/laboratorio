@@ -4,7 +4,6 @@ Espaço de treino do **Grupo PET II** para aprender o **Git básico** e criar pr
 Pode errar à vontade.
 
 - **No ar:** https://pet-saude-clima-sjbv.github.io/laboratorio/ (atualiza sozinho a cada envio)
-- **Projeto real, para estudar:** https://github.com/PET-Saude-Clima-SJBV/hub-pet-saude
 
 ---
 
