@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "pessoa": "Ana Clara",
+    "semana": 1,
+    "data": "2026-10-15",
+    "tipo": "Desenvolvimento",
+    "horas": 4,
+    "descricao": "Criação do componente de login",
+    "evidencia": "https://github.com/exemplo/commit1",
+    "status": "enviada"
+  },
+  {
+    "id": 2,
+    "pessoa": "Ana Clara",
+    "semana": 1,
+    "data": "2026-10-16",
+    "tipo": "Revisão",
+    "horas": 2,
+    "descricao": "Revisão de PR do componente de botão",
+    "evidencia": "",
+    "status": "pendente"
+  },
+  {
+    "id": 3,
+    "pessoa": "Ana Clara",
+    "semana": 1,
+    "data": "2026-10-17",
+    "tipo": "Documentação",
+    "horas": 1,
+    "descricao": "Atualização do README",
+    "evidencia": "https://github.com/exemplo/commit3",
+    "status": "enviada"
+  },
+  {
+    "id": 4,
+    "pessoa": "Carlos Eduardo",
+    "semana": 1,
+    "data": "2026-10-18",
+    "tipo": "Design",
+    "horas": 5,
+    "descricao": "Prototipagem no Figma da tela de perfil",
+    "evidencia": "https://figma.com/exemplo1",
+    "status": "enviada"
+  },
+  {
+    "id": 5,
+    "pessoa": "Carlos Eduardo",
+    "semana": 1,
+    "data": "2026-10-19",
+    "tipo": "Reunião",
+    "horas": 1,
+    "descricao": "Planning da Sprint 2",
+    "evidencia": "https://ata.exemplo.com/1",
+    "status": "enviada"
+  },
+  {
+    "id": 6,
+    "pessoa": "Carlos Eduardo",
+    "semana": 1,
+    "data": "2026-10-20",
+    "tipo": "Desenvolvimento",
+    "horas": 3,
+    "descricao": "Ajustes de CSS responsivo",
+    "evidencia": "",
+    "status": "pendente"
+  }
+]
