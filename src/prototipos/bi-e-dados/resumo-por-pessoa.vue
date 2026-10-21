@@ -49,7 +49,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import dadosFicticios from '../../../dados/atividades-ficticias.json'
+import dadosFicticios from '../../dados/atividades-ficticias.json'
 
 const pessoaSelecionada = ref('')
 
