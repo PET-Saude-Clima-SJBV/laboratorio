@@ -16,7 +16,7 @@
 
 <script setup>
 const termos = [
-  // 12 Termos exigidos no enunciado
+
   {
     termo: "1. Meta",
     definicao: "Indica um objetivo ou alvo a ser alcançado",
@@ -78,7 +78,6 @@ const termos = [
     exemplo: "O sistema web onde gestores e estudantes registram os relatórios municipais."
   },
 
-  // 8 Termos extraídos diretamente das metas dos grupos no site
   {
     termo: "13. APS (Atenção Primária à Saúde)",
     definicao: "Porta de entrada do SUS responsável pelos cuidados básicos e contínuos de saúde da comunidade.",
