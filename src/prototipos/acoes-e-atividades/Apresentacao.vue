@@ -57,6 +57,45 @@
       </tr>
     </tbody>
   </table>
+
+  <br>
+
+  <h2>Até domingo, 25/10:</h2>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Atividade</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="container">
+            Completar as regras: descrição com pelo menos 20 caracteres, evidência obrigatória começando com http e semana de 1 a 104. Não existe prazo máximo para lançar atividade atrasada.
+          </div>
+        </td>
+        <td>
+          <div class="container">
+            <span class="circle-ok"></span> OK
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="container">
+            Criar a página <code>RegrasDeValidacao.vue</code> com uma tabela de 10 casos: entrada, resultado esperado e resultado obtido, em verde ou vermelho.
+          </div>
+        </td>
+        <td>
+          <div class="container">
+            <span class="circle-ok"></span> OK
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </template>
 
 <style scoped>
