@@ -36,6 +36,30 @@
         <td>Sozinha é só um número. Ligada à pessoa vira dado de desempenho e frequência, e pode afetar bolsa ou certificação se estiver errada.</td>
         <td>Tratar junto com a pessoa, com acesso restrito. Validar limites (por exemplo, de 0 a 24 horas por dia).</td>
       </tr>
+            <tr>
+        <td>Descrição</td>
+        <td>Depende</td>
+        <td>É texto livre, então a pessoa pode escrever nomes de terceiros, endereços ou informações de saúde de quem foi atendido. Dado de saúde é dado pessoal sensível na LGPD.</td>
+        <td>Orientar a não escrever nomes nem dados de pessoas atendidas. Limitar o tamanho do texto e revisar antes de exibir em página pública.</td>
+      </tr>
+      <tr>
+        <td>Evidência</td>
+        <td>Sim</td>
+        <td>Foto, lista de presença ou documento podem mostrar rostos, nomes, assinaturas e até a localização (metadados da foto). Se vazar, expõe várias pessoas de uma vez.</td>
+        <td>Guardar fora do repositório, com acesso restrito. Aceitar só tipos e tamanhos definidos e remover metadados. No laboratório, usar só arquivos fictícios.</td>
+      </tr>
+      <tr>
+        <td>Território</td>
+        <td>Depende</td>
+        <td>Município ou região não identifica ninguém. Endereço ou comunidade pequena, junto com data e pessoa, revela onde alguém esteve e pode identificar moradores.</td>
+        <td>Usar nível agregado (município ou região) e lista fechada, sem endereço completo.</td>
+      </tr>
+      <tr>
+        <td>Validador</td>
+        <td>Sim</td>
+        <td>Identifica quem aprovou o registro. Se qualquer um puder validar, ou se a pessoa validar a si mesma, o registro perde confiança.</td>
+        <td>Registrar por identificador de usuário, controlar quem pode validar, impedir autovalidação e guardar um histórico de quem aprovou.</td>
+      </tr>
     </tbody>
   </table>
 </template>
