@@ -7,7 +7,7 @@
     "tipo": "Desenvolvimento",
     "horas": 4,
     "descricao": "Criação do componente de login",
-    "evidencia": "https://github.com/exemplo/commit1",
+    "evidencia": "https://github.com/exemplo/1",
     "status": "enviada"
   },
   {
@@ -17,7 +17,7 @@
     "data": "2026-10-16",
     "tipo": "Revisão",
     "horas": 2,
-    "descricao": "Revisão de PR do componente de botão",
+    "descricao": "Revisão de PR",
     "evidencia": "",
     "status": "pendente"
   },
@@ -29,40 +29,106 @@
     "tipo": "Documentação",
     "horas": 1,
     "descricao": "Atualização do README",
-    "evidencia": "https://github.com/exemplo/commit3",
+    "evidencia": "https://github.com/exemplo/3",
     "status": "enviada"
   },
   {
     "id": 4,
-    "pessoa": "Carlos Eduardo",
+    "pessoa": "Ana Clara",
     "semana": 1,
     "data": "2026-10-18",
-    "tipo": "Design",
-    "horas": 5,
-    "descricao": "Prototipagem no Figma da tela de perfil",
-    "evidencia": "https://figma.com/exemplo1",
+    "tipo": "Reunião",
+    "horas": 1,
+    "descricao": "Daily",
+    "evidencia": "https://ata.exemplo/4",
     "status": "enviada"
   },
   {
     "id": 5,
     "pessoa": "Carlos Eduardo",
     "semana": 1,
-    "data": "2026-10-19",
-    "tipo": "Reunião",
-    "horas": 1,
-    "descricao": "Planning da Sprint 2",
-    "evidencia": "https://ata.exemplo.com/1",
+    "data": "2026-10-18",
+    "tipo": "Design",
+    "horas": 5,
+    "descricao": "Prototipagem no Figma",
+    "evidencia": "https://figma.com/exemplo5",
     "status": "enviada"
   },
   {
     "id": 6,
     "pessoa": "Carlos Eduardo",
     "semana": 1,
+    "data": "2026-10-19",
+    "tipo": "Reunião",
+    "horas": 1,
+    "descricao": "Planning",
+    "evidencia": "https://ata.exemplo/6",
+    "status": "enviada"
+  },
+  {
+    "id": 7,
+    "pessoa": "Carlos Eduardo",
+    "semana": 1,
     "data": "2026-10-20",
     "tipo": "Desenvolvimento",
     "horas": 3,
-    "descricao": "Ajustes de CSS responsivo",
+    "descricao": "Ajustes CSS",
     "evidencia": "",
     "status": "pendente"
+  },
+  {
+    "id": 8,
+    "pessoa": "Carlos Eduardo",
+    "semana": 1,
+    "data": "2026-10-21",
+    "tipo": "Estudo",
+    "horas": 2,
+    "descricao": "Estudo de Vue Router",
+    "evidencia": "https://docs.exemplo/8",
+    "status": "enviada"
+  },
+  {
+    "id": 9,
+    "pessoa": "Letícia",
+    "semana": 1,
+    "data": "2026-10-19",
+    "tipo": "Teste",
+    "horas": 3,
+    "descricao": "Criação de testes unitários",
+    "evidencia": "https://github.com/exemplo/9",
+    "status": "enviada"
+  },
+  {
+    "id": 10,
+    "pessoa": "Letícia",
+    "semana": 1,
+    "data": "2026-10-20",
+    "tipo": "Desenvolvimento",
+    "horas": 4,
+    "descricao": "Integração de API",
+    "evidencia": "https://github.com/exemplo/10",
+    "status": "enviada"
+  },
+  {
+    "id": 11,
+    "pessoa": "Letícia",
+    "semana": 1,
+    "data": "2026-10-21",
+    "tipo": "Revisão",
+    "horas": 1,
+    "descricao": "Code review",
+    "evidencia": "",
+    "status": "pendente"
+  },
+  {
+    "id": 12,
+    "pessoa": "Letícia",
+    "semana": 1,
+    "data": "2026-10-22",
+    "tipo": "Reunião",
+    "horas": 2,
+    "descricao": "Review da Sprint",
+    "evidencia": "https://ata.exemplo/12",
+    "status": "enviada"
   }
 ]
